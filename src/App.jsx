@@ -112,7 +112,7 @@ function App() {
             </div>
             <div className="flex items-center space-x-2">
               <Badge variant="outline">Interactive Exercises</Badge>
-              <Button variant="outline" size="sm">
+              <Button variant="outline" size="sm" onClick={() => window.open('https://github.com/prabodh-dev1/programming-principles', '_blank')}>
                 <Github className="w-4 h-4 mr-2" />
                 View Source
               </Button>
@@ -282,7 +282,7 @@ function App() {
                           </Badge>
                         </div>
                       </div>
-                      <Button variant="ghost" size="sm" className="opacity-0 group-hover:opacity-100 transition-opacity">
+                      <Button variant="ghost" size="sm" className="opacity-0 group-hover:opacity-100 transition-opacity" onClick={() => window.open('https://github.com/prabodh-dev1/programming-principles/blob/main/README.md', '_blank')}>
                         <ExternalLink className="w-4 h-4" />
                       </Button>
                     </div>
@@ -302,11 +302,11 @@ function App() {
                 <p className="text-muted-foreground mb-4">
                   Access the full document with detailed explanations, code examples, and solutions
                 </p>
-                <Button variant="outline" className="mr-4">
+                <Button variant="outline" className="mr-4" onClick={() => window.open('https://github.com/prabodh-dev1/programming-principles/blob/main/README.md', '_blank')}>
                   <BookOpen className="w-4 h-4 mr-2" />
                   View Full Document
                 </Button>
-                <Button>
+                <Button onClick={() => window.open('https://github.com/prabodh-dev1/programming-principles', '_blank')}>
                   <Github className="w-4 h-4 mr-2" />
                   Download Examples
                 </Button>
